@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Computing Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Keeping a very light background for contrast */
+            color: #292727; /* Dark text for readability */
+        }
+        .section-heading {
+            /* Using the darkest color for headings */
+            @apply text-4xl font-bold text-center mb-12 text-[#292727];
+        }
+        .card {
+            /* Cards remain white for content clarity */
+            @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+        }
+        .btn-primary {
+            /* Primary button using #F269F2, hover with #F4865A */
+            @apply inline-block bg-[#F269F2] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-[#F4865A] transition-colors duration-300;
+        }
+        /* New style for the contact buttons: outline with colored text */
+        .btn-contact-outline {
+            @apply inline-block bg-transparent border border-[#F269F2] text-[#F269F2] font-semibold py-3 px-8 rounded-full shadow-md hover:bg-[#F269F2] hover:text-white transition-colors duration-300;
+        }
+        .nav-link {
+            /* Navigation links using the dark text, hover with primary accent */
+            @apply text-[#292727] hover:text-[#F269F2] font-medium transition-colors duration-200;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo/Name using primary accent color -->
+            <a href="#" class="text-2xl font-bold text-[#F269F2]">Ayesha Kerbelker</a>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#dissertation" class="nav-link">Dissertation</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-r from-[#F269F2] to-[#F4865A] text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <!-- Photo border color matches primary accent -->
+                <img src="https://placehold.co/200x200/F269F2/ffffff?text=Your+Photo" alt="Your Photo" class="rounded-full mx-auto border-4 border-white shadow-lg w-48 h-48 object-cover">
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Hi, I'm Ayesha Kerbelker</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                A passionate computing graduate seeking opportunities in <span class="font-semibold">Data Analysis, Digital Product Management, UX Design, and Digital Marketing.</span>
+            </p>
+            <a href="#contact" class="btn-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">About Me</h2>
+            <div class="max-w-4xl mx-auto text-lg leading-relaxed text-[#292727]">
+                <p class="mb-6">
+                    I am a recent Computing graduate from the University of Greenwich, achieving a 2:1 honours degree. My academic journey has equipped me with a strong foundation in various computing disciplines, complemented by practical experience and a keen interest in the intersection of technology and business.
+                </p>
+                <p class="mb-6">
+                    My diverse skill set, ranging from core programming languages like Java and Python to critical soft skills such as problem-solving and strong communication, enables me to approach complex challenges with a holistic perspective. I am particularly drawn to roles that require analytical thinking, creative problem-solving, and a user-centric approach.
+                </p>
+                <p>
+                    I am eager to apply my technical expertise and adaptable nature to contribute to innovative projects and grow within a dynamic professional environment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Technical Skills -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#292727]">Technical Skills</h3>
+                    <ul class="list-disc list-inside space-y-2 text-[#292727]">
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>Web Development</li>
+                        <li>Software Engineering</li>
+                        <li>Programming Logic</li>
+                        <li>Syntax</li>
+                        <li>Visual Studio Code</li>
+                        <li>Debugging</li>
+                        <li>Database Management</li>
+                    </ul>
+                </div>
+                <!-- Soft Skills -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#292727]">Soft Skills</h3>
+                    <ul class="list-disc list-inside space-y-2 text-[#292727]">
+                        <li>Ethical Considerations</li>
+                        <li>Problem-Solving</li>
+                        <li>Initiative and Adaptability</li>
+                        <li>Strong Communication</li>
+                    </ul>
+                </div>
+                <!-- Tools & Methodologies -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#292727]">Tools & Methodologies</h3>
+                    <ul class="list-disc list-inside space-y-2 text-[#292727]">
+                        <li>Project Management Tools (e.g., Trello)</li>
+                        <li>Version Control (e.g., Git)</li>
+                        <li>Data Analysis Tools (e.g., SQL, Pandas)</li>
+                        <li>UX Design Principles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dissertation Section -->
+    <section id="dissertation" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Dissertation Project</h2>
+            <div class="max-w-4xl mx-auto card">
+                <h3 class="text-3xl font-semibold mb-4 text-[#292727]">ML Student Writing Aid</h3>
+                <p class="text-lg leading-relaxed text-[#292727] mb-4">
+                    My dissertation involved the development of an <span class="font-semibold">ML-powered tool aimed at providing comprehensive feedback and suggestions to students during their academic writing process.</span>
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-lg text-[#292727]">
+                    <li>Utilized Machine Learning principles to analyze text for quality and coherence.</li>
+                    <li>Integrated <span class="font-semibold">LanguageTool's robust features</span> to offer in-depth feedback on:
+                        <ul class="list-circle list-inside ml-6 mt-1">
+                            <li>Grammatical errors</li>
+                            <li>Punctuation inconsistencies</li>
+                            <li>Style suggestions</li>
+                            <li>Lexical choices and vocabulary enhancement</li>
+                        </ul>
+                    </li>
+                    <li>Designed to improve academic writing clarity, precision, and overall quality.</li>
+                    <li>Demonstrated strong problem-solving and software engineering skills in its development.</li>
+                </ul>
+                <!-- Updated GitHub link for Dissertation Project -->
+                <a href="https://github.com/Kerbs1508/dissertation-project.git" target="_blank" class="text-[#F269F2] hover:underline font-medium mt-4 inline-block">View Project on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Past Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-2 text-[#292727]">Computer Science Teaching Assistant</h3>
+                    <!-- Updated company name to Swansea School -->
+                    <p class="text-[#F269F2] mb-3">Swanlea School</p>
+                    <p class="text-[#292727] leading-relaxed">
+                        Assisted students with programming concepts, debugging, and project guidance. Developed strong communication and problem-solving skills by explaining complex topics in an understandable manner. Fostered a supportive learning environment.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-2 text-[#292727]">Service Associate</h3>
+                    <p class="text-[#F269F2] mb-3">Selfridges</p>
+                    <p class="text-[#292727] leading-relaxed">
+                        Provided exceptional customer service in a fast-paced retail environment. Developed strong interpersonal skills, attention to detail, and the ability to adapt to diverse customer needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="card">
+                    <!-- Placeholder images now use the new color scheme for consistency -->
+                    <img src="https://placehold.co/600x400/F269F2/ffffff?text=Project+1+Screenshot" alt="Project 1 Screenshot" class="rounded-lg mb-4 shadow-md w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 text-[#292727]">Application Development- Geography Game</h3>
+                    <p class="text-[#292727] mb-4">
+                        This C# console application is an interactive Geography Quiz Game. It goes beyond basic Q&A, offering score tracking, completion time, and correct answer revelation.
+                    </p>
+                    <a href="https://github.com/Kerbs1508/GeographyQuizGame.git" class="text-[#F269F2] hover:underline font-medium">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="card">
+                    <img src="https://placehold.co/600x400/F4865A/ffffff?text=Project+2+Screenshot" alt="Project 2 Screenshot" class="rounded-lg mb-4 shadow-md w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 text-[#292727]">Project Title 2</h3>
+                    <p class="text-[#292727] mb-4">
+                        Brief description of Project 2, highlighting technologies used and your contributions.
+                    </p>
+                    <a href="#" class="text-[#F269F2] hover:underline font-medium">View Project (Link to GitHub/Live Demo)</a>
+                </div>
+                <!-- Project 3 was removed in the previous iteration -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Download / Contact Section -->
+    <section id="contact" class="py-16 md:py-24 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Ready to Connect?</h2>
+            <p class="text-xl text-[#292727] mb-8 max-w-2xl mx-auto">
+                I'm actively seeking new opportunities. Feel free to download my CV or reach out to discuss how my skills can benefit your team.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="your_cv_link.pdf" download="Ayesha_Kerbelker_CV.pdf" class="btn-primary">Download My CV</a>
+                <!-- Email link now uses the new outline button style -->
+                <a href="mailto:ayeshakerbs@gmail.com" class="btn-contact-outline">Email Me</a>
+                <!-- LinkedIn link now uses the new outline button style -->
+                <a href="https://www.linkedin.com/in/ayesha-kerbelker-b74516247" target="_blank" class="btn-contact-outline">LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#292727] text-white py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 Ayesha K. All rights reserved.</p>
+            <p class="mt-2">Built with ❤️ and Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
